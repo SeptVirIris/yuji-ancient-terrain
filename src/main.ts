@@ -5,7 +5,7 @@ import { hasTiandituKey, setTiandituKey, getTiandituKey } from './key'
 // 自动从 sync-cities.json 同步六个图层数据
 async function loadSyncData() {
   try {
-    var resp = await fetch('/sync-cities.json')
+    var resp = await fetch(import.meta.env.BASE_URL + 'sync-cities.json')
     var data = await resp.json()
     localStorage.setItem('yuji-layer-data', JSON.stringify(data))
     console.log('已从读心·读城鉴同步'
@@ -51,7 +51,6 @@ function showKeyPrompt(): Promise<void> {
 // 在控制面板中追加 Key 管理区域
 function setupKeySection() {
   if (!hasTiandituKey()) return
-  // 等待面板渲染
   setTimeout(function () {
     var panel = document.querySelector('.yuji-panel .panel-body')
     if (!panel) return
@@ -73,7 +72,6 @@ function setupKeySection() {
       var v = inp.value.trim()
       if (!v) return
       setTiandituKey(v)
-      // 刷新底图瓦片，使新 Key 生效
       location.reload()
     }
   }, 800)
