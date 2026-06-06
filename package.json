@@ -9,10 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "cesium": "^1.108.0",
     "leaflet": "^1.9.4",
-    "playwright": "^1.60.0",
-    "vite-plugin-cesium": "^1.2.23"
+    "playwright": "^1.60.0"
   },
   "devDependencies": {
     "@types/leaflet": "^1.9.17",
