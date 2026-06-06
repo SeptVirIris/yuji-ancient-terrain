@@ -1,0 +1,22 @@
+{
+  "name": "yuji-ancient-terrain",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "cesium": "^1.108.0",
+    "leaflet": "^1.9.4",
+    "playwright": "^1.60.0",
+    "vite-plugin-cesium": "^1.2.23"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.17",
+    "typescript": "^5.7.3",
+    "vite": "^6.3.2"
+  }
+}
