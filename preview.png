@@ -1,6 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN">
   <head>
+    <script type="module" src="/@vite/client"></script>
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>禹迹 —— 中国古代地形舆图</title>
@@ -13,8 +15,6 @@
   </head>
   <body>
     <div id="map"></div>
-    <div id="sandbox" style="display:none"></div>
-    <div id="draw-tooltip" style="display:none; position:fixed; bottom:24px; left:50%; transform:translateX(-50%); background:rgba(0,0,0,0.85); color:#fff; padding:10px 20px; border-radius:6px; font-size:14px; z-index:10000; pointer-events:none; letter-spacing:0.5px;"></div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
