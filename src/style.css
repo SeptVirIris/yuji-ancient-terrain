@@ -223,7 +223,3 @@ body {
 .satellite-basemap .leaflet-tooltip span {
   text-shadow: none !important;
 }
-
-.terrain-basemap {
-  filter: brightness(0.9) saturate(0.9);
-}
