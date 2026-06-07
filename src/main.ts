@@ -4,6 +4,7 @@ import { hasTiandituKey, setTiandituKey, getTiandituKey } from './key'
 
 // 自动从 sync-cities.json 同步六个图层数据
 async function loadSyncData() {
+  if(localStorage.getItem('yuji-layer-data')) return
   try {
     var resp = await fetch(import.meta.env.BASE_URL + 'sync-cities.json')
     var data = await resp.json()
